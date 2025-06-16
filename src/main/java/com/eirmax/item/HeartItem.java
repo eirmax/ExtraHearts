@@ -1,11 +1,13 @@
 package com.eirmax.item;
 
 import com.eirmax.component.ExtraHeartsComponent;
+import com.eirmax.events.TotemParticleSpawn;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.network.packet.s2c.play.EntityStatusS2CPacket;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -25,9 +27,8 @@ public class HeartItem extends Item {
                 stack.decrement(1);
                 user.setHealth(user.getMaxHealth());
                 user.playSound(SoundEvents.ITEM_TOTEM_USE, 1.0F, 1.0F);
-                ((ServerPlayerEntity)user).networkHandler.sendPacket(
-                        new EntityStatusS2CPacket(user, (byte)35)
-                );
+                world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ITEM_TOTEM_USE, SoundCategory.PLAYERS, 1.0F, 1.0F);
+                TotemParticleSpawn.startTotemBurstEffect((ServerPlayerEntity) user);
                 return TypedActionResult.success(stack, false);
             }
         }
