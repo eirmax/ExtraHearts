@@ -14,7 +14,7 @@ public class CreativeTab {
     public static final ItemGroup EXTRA_HEARTS = Registry.register(Registries.ITEM_GROUP,
             new Identifier(ExtraHearts.MOD_ID, "extra_hearts_group"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.extra_hearts_group"))
-                    .icon(() -> new ItemStack(ModItems.HEARTITEMTAB)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.HEARTITEM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.HEARTITEM);
                     }).build());
 
