@@ -34,7 +34,7 @@ public class GoldHeart extends Item {
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 2400, 3));
             user.playSound(SoundEvents.ITEM_TOTEM_USE, 1.0F, 1.0F);
             world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ITEM_TOTEM_USE, SoundCategory.PLAYERS, 1.0F, 1.0F);
-            TotemParticleSpawn.startLavaBurstEffect((ServerPlayerEntity) user);
+            TotemParticleSpawn.startTotemBurstEffect((ServerPlayerEntity) user);
             return TypedActionResult.success(stack, false);
         }
         return TypedActionResult.fail(stack);
