@@ -12,6 +12,7 @@ public class ModItems {
 
 
     public static final Item HEARTITEM = registerItem("extraheart", new HeartItem(new Item.Settings().maxCount(1)));
+    public static final Item GOLDHEARTITEM = registerItem("goldheart", new GoldHeart(new Item.Settings().maxCount(1)));
 
 
     public static Item registerItem(String name, Item item) {

@@ -1,7 +1,11 @@
 {
   "item.extrahearts.extraheart": "Сердце",
+  "item.extrahearts.goldheart": "Золотое сердце",
   "itemgroup.extra_hearts_group": "Extra Hearts",
-  "item.extraheart.tooltipone": "При использовани добавляет игроку дополнительное сердце.",
+  "item.goldheart.tooltipone": "При использовании временно наделяет игрока",
+  "item.goldheart.tooltipbn": "большим количеством здоровья",
+  "item.goldheart.tooltiptwo": "В нём ощущается энергия жизни",
+  "item.extraheart.tooltipone": "При использовани добавляет игроку дополнительное сердце",
   "item.extraheart.tooltiptwo": "На нем еще ощущается кровь вашего врага..."
 
 }

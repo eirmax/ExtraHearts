@@ -1,7 +1,13 @@
 {
   "item.extrahearts.extraheart": "Heart",
+  "item.extrahearts.goldheart": "Golden Heart",
   "itemgroup.extra_hearts_group": "Extra Hearts",
+  "item.goldheart.tooltipone": "When used, temporarily grants",
+  "item.goldheart.tooltipbn": "to player a large amount of health",
+  "item.goldheart.tooltiptwo": "There is a sense of life energy in it.",
   "item.extraheart.tooltipone": "When used adds an extra heart to the player",
   "item.extraheart.tooltiptwo": "You can still feel the blood of your enemy on it."
+
+
 
 }

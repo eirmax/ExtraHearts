@@ -16,6 +16,7 @@ public class CreativeTab {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.extra_hearts_group"))
                     .icon(() -> new ItemStack(ModItems.HEARTITEM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.HEARTITEM);
+                        entries.add(ModItems.GOLDHEARTITEM);
                     }).build());
 
 
