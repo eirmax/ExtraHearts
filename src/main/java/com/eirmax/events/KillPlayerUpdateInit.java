@@ -19,7 +19,6 @@ public class KillPlayerUpdateInit {
                         if (!added) {
                             killerPlayer.dropStack(heart);
                         }
-                        System.out.println("[HeartAward] Player " + killerPlayer.getName().getString() + " получил сердце за убийство " + victimPlayer.getName().getString());
                     }
                 }
         );
