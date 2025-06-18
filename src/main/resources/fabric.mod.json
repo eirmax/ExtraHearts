@@ -15,6 +15,9 @@
 	"icon": "assets/extrahearts/textures/sprites/icon/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"fabric-datagen": [
+		"com.eirmax.DataGen.ExtraHeartsDataGen"
+		],
 		"main": [
 			"com.eirmax.ExtraHearts"
 		],

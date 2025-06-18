@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "extrahearts",
+  "group": "extra_hearts_group",
+  "key": {
+    "#": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "X": {
+      "item": "minecraft:experience_bottle"
+    },
+    "I": {
+      "item": "extrahearts:extraheart"
+    }
+  },
+  "pattern": [
+    "X#X",
+    "#I#",
+    "X#X"
+  ],
+  "result": {
+    "count": 1,
+    "item": "extrahearts:goldheart"
+  },
+  "show_notification": true
+}
