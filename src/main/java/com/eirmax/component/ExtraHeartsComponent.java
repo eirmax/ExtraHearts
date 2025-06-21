@@ -1,6 +1,7 @@
 package com.eirmax.component;
 
 
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
 
 public class ExtraHeartsComponent {
@@ -32,7 +33,7 @@ public class ExtraHeartsComponent {
     public static void updateMaxHealth(PlayerEntity player) {
         int extra = getHearts(player);
         float base = 20.0F;
-        player.getAttributeInstance(net.minecraft.entity.attribute.EntityAttributes.GENERIC_MAX_HEALTH)
+        player.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH)
                 .setBaseValue(base + extra * 2.0F);
     }
 }
